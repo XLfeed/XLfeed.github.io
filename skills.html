@@ -1,18 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Skills | Goh Kai Zer</title>
-    </head>
-    
-    <body>
 
-        <h1>My Skills</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <p>This is my skills page.</p>
+    <link rel="stylesheet" href="css/style.css">
 
-        <a href="index.html">Back to Home page</a>
+    <title>My Skills | Goh Kai Zer</title>
+</head>
 
-    </body>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="works.html">My Works</a>
+            <a href="skills.html">My Skills</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="skills-section">
+
+            <h1>KAI ZER'S<br>PORTFOLIO</h1>
+
+            <div class="portfolio-quote">
+                <p>"Sic Parvis Magna"</p>
+                <p class="quote-author">~Sir Francis Drake</p>
+            </div>
+
+            <h2>WHAT I USE</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>C#</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Programmes</h3>
+
+                    <p>Unity</p>
+                    <p>Unreal Engine</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Art</h3>
+
+                    <p>PHOTOSHOP</p>
+                    <p>ILLUSTRATOR</p>
+                    <p>Sai Paint Tool</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+        
+            <h2>Contacting Me</h2>
+        
+            <form action="mailto:goh_kaizer@hotmail.com"
+                  method="post"
+                  enctype="text/plain">
+        
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Name"
+                    required>
+        
+                <div class="contact-row">
+                
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        required>
+                
+                    <input
+                        type="tel"
+                        name="Phone"
+                        placeholder="Phone">
+                
+                </div>
+            
+                <textarea
+                    name="Message"
+                    placeholder="Type your message here..."
+                    required></textarea>
+            
+                <button type="submit">Submit</button>
+            
+            </form>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Goh Kai Zer Portfolio</p>
+    </footer>
+
+</body>
+
 </html>

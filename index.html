@@ -13,10 +13,8 @@
 <body>
 
     <header>
-        <h1>Welcome to My Portfolio</h1>
-
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">About Me</a>
             <a href="works.html">My Works</a>
             <a href="skills.html">My Skills</a>
         </nav>
@@ -75,11 +73,43 @@
         </section>
     
         <section class="contact-section">
+        
             <h2>Contacting Me</h2>
         
-            <p>
-                Contact information will go here.
-            </p>
+            <form action="mailto:goh_kaizer@hotmail.com"
+                  method="post"
+                  enctype="text/plain">
+        
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Name"
+                    required>
+        
+                <div class="contact-row">
+                
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        required>
+                
+                    <input
+                        type="tel"
+                        name="Phone"
+                        placeholder="Phone">
+                
+                </div>
+            
+                <textarea
+                    name="Message"
+                    placeholder="Type your message here..."
+                    required></textarea>
+            
+                <button type="submit">Submit</button>
+            
+            </form>
+        
         </section>
     
     </main>
