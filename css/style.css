@@ -337,7 +337,10 @@ footer p
 .works-section > h1
 {
     text-align: center;
+
     font-size: 56px;
+    font-weight: 400;
+
     margin: 0 0 20px 0;
 }
 
@@ -359,16 +362,6 @@ footer p
 
     padding-top: 90px;
     padding-bottom: 100px;
-}
-
-/* Main My Works title */
-
-.works-section > h1
-{
-    font-size: 56px;
-    font-weight: 400;
-
-    margin: 0 0 20px 0;
 }
 
 /* Completed Games */
@@ -455,7 +448,9 @@ footer p
 
 .project-card a
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     color: white;
     text-decoration: none;
@@ -546,29 +541,6 @@ footer p
 /* =========================
    Actual Project Images
    ========================= */
-
-.project-card a
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-card img
-{
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
-
-    border: none;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
 
 .project-card img
 {
@@ -832,4 +804,384 @@ footer p
     text-align: center;
 
     opacity: 0.8;
+}
+
+/* =========================
+   Individual Project Pages
+   ========================= */
+
+.project-hero
+{
+    padding: 40px 40px 60px;
+}
+
+.project-hero h1,
+.project-hero .project-tagline
+{
+    text-align: center;
+}
+
+.project-hero-image
+{
+    display: block;
+
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+
+    margin: 40px auto 0;
+}
+
+.back-link,
+.project-button
+{
+    color: white;
+    text-decoration: none;
+}
+
+.back-link
+{
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    transition: color 0.2s ease;
+}
+
+.back-link:hover
+{
+    color: white;
+}
+
+.project-button
+{
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: #3b4068;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.project-button:hover
+{
+    background-color: #505783;
+    transform: translateY(-2px);
+}
+
+.project-section
+{
+    padding: 50px 40px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-section h2
+{
+    font-size: 30px;
+
+    margin: 0 0 20px;
+}
+
+.project-section p
+{
+    line-height: 1.7;
+
+    max-width: 800px;
+}
+
+/* =========================
+   Project Role
+   ========================= */
+
+.role-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.role-card
+{
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    border-radius: 8px;
+}
+
+.role-card h3
+{
+    margin: 0 0 20px 0;
+
+    font-size: 22px;
+}
+
+.role-card p
+{
+    line-height: 1.7;
+
+    margin: 0 0 15px 0;
+}
+
+.role-card p:last-child
+{
+    margin-bottom: 0;
+}
+
+/* =========================
+   Ough! Policy - My Role
+   ========================= */
+
+.ough-role-grid
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+
+    margin-top: 35px;
+}
+
+.ough-role-card
+{
+    padding: 35px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.ough-role-card h3
+{
+    font-size: 26px;
+
+    margin: 0 0 30px 0;
+}
+
+.ough-role-card p
+{
+    max-width: 800px;
+
+    margin: 25px auto 0 auto;
+
+    line-height: 1.7;
+
+    text-align: left;
+}
+
+
+/* Public / Senate Board */
+
+.role-resource-image
+{
+    display: block;
+
+    width: auto;
+    height: 500px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Candidate Cards
+   ========================= */
+
+.candidate-showcase
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 320px);
+
+    justify-content: center;
+    align-items: start;
+
+    gap: 80px;
+
+    margin: 40px auto 45px auto;
+}
+
+.candidate-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 320px;
+
+    text-align: center;
+}
+
+.candidate-item h4
+{
+    font-size: 20px;
+
+    margin: 0 0 15px 0;
+
+    text-align: center;
+}
+
+.candidate-item img
+{
+    display: block;
+
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px)
+{
+    .candidate-showcase
+    {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .candidate-item
+    {
+        width: 100%;
+    }
+
+    .candidate-item img
+    {
+        width: 240px;
+    }
+}
+
+/* =========================
+   Ough! Policy - Gameplay
+   ========================= */
+
+.gameplay-loop
+{
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 40px auto;
+
+    max-width: 1100px;
+}
+
+.gameplay-step
+{
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 25px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    text-align: center;
+}
+
+.gameplay-step span
+{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    margin: 0 auto 15px auto;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    font-weight: bold;
+}
+
+.gameplay-step h3
+{
+    margin: 0 0 12px 0;
+
+    font-size: 20px;
+}
+
+.gameplay-step p
+{
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.gameplay-arrow
+{
+    display: flex;
+
+    align-items: center;
+
+    font-size: 24px;
+
+    opacity: 0.6;
+}
+
+.gameplay-goal
+{
+    margin: 30px auto 0 auto;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px)
+{
+    .gameplay-loop
+    {
+        flex-direction: column;
+    }
+
+    .gameplay-arrow
+    {
+        justify-content: center;
+
+        transform: rotate(90deg);
+    }
 }
