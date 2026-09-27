@@ -1185,3 +1185,211 @@ footer p
         transform: rotate(90deg);
     }
 }
+
+/* =========================
+   Rocket Slime Theme
+   ========================= */
+
+.rocket-slime-page
+{
+    --rocket-bg: #18231b;
+    --rocket-surface: #223126;
+    --rocket-blue: #8fd8f8;
+    --rocket-green: #a8d82d;
+    --rocket-text: #ffffff;
+}
+
+
+/* Main page background */
+
+.rocket-slime-page
+{
+    background-color: var(--rocket-bg);
+}
+
+
+/* Rocket Slime hero */
+
+.rocket-slime-hero
+{
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(24, 35, 27, 0.60),
+            rgba(24, 35, 27, 0.90)
+        ),
+        url("../images/Projects/RocketSlime/demoBG.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+
+/* Rocket Slime hero */
+
+.rocket-slime-hero
+{
+    position: relative;
+
+    width: 100vw;
+    max-width: none;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    background:
+        linear-gradient(
+            rgba(24, 35, 27, 0.60),
+            rgba(24, 35, 27, 0.90)
+        ),
+        url("../images/Projects/RocketSlime/demoBG.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 40px 0 70px;
+}
+
+.rocket-slime-hero-content
+{
+    width: min(100% - 80px, 1120px);
+    margin: 0 auto;
+}
+
+/* Back link */
+
+.rocket-slime-page .back-link
+{
+    color: var(--rocket-blue);
+}
+
+.rocket-slime-page .back-link:hover
+{
+    color: var(--rocket-green);
+}
+
+
+/* Section separators */
+
+.rocket-slime-page .project-section
+{
+    border-color: rgba(143, 216, 248, 0.30);
+}
+
+
+/* Section headings */
+
+.rocket-slime-page .project-section h2
+{
+    color: var(--rocket-blue);
+}
+
+
+/* Role cards */
+
+.rocket-slime-page .role-card
+{
+    background-color: var(--rocket-surface);
+
+    border: 1px solid rgba(143, 216, 248, 0.35);
+    border-top: 3px solid var(--rocket-green);
+}
+
+
+/* Project button */
+
+.rocket-slime-page .project-button
+{
+    background-color: var(--rocket-surface);
+    border: 1px solid var(--rocket-blue);
+
+    color: var(--rocket-text);
+}
+
+.rocket-slime-page .project-button:hover
+{
+    background-color: var(--rocket-blue);
+    color: #18231b;
+}
+
+.rocket-slime-page .controls-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+.rocket-slime-page .control-item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 20px;
+
+    background-color: var(--rocket-surface);
+
+    border-left: 3px solid var(--rocket-green);
+}
+
+.rocket-slime-page .control-item strong
+{
+    color: var(--rocket-blue);
+    font-size: 18px;
+}
+
+@media (max-width: 700px)
+{
+    .rocket-slime-page .controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-details
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 25px;
+}
+
+.project-details > div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.project-details strong
+{
+    font-size: 18px;
+}
+
+.project-details span
+{
+    opacity: 0.8;
+}
+
+@media (max-width: 700px)
+{
+    .project-details
+    {
+        grid-template-columns: 1fr;
+    }
+}
