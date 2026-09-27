@@ -1393,3 +1393,179 @@ footer p
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================
+   Stationary Siege Theme
+   ========================= */
+
+.stationary-siege-page
+{
+    --siege-bg: #252525;
+    --siege-surface: #303030;
+    --siege-surface-light: #383838;
+
+    --siege-chalk: #f3f0df;
+    --siege-wood: #9d7357;
+    --siege-wood-light: #c6a98e;
+
+    background-color: var(--siege-bg);
+    color: var(--siege-chalk);
+}
+
+
+/* Hero */
+
+.stationary-siege-page .stationary-siege-hero
+{
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(20, 20, 20, 0.35),
+            rgba(20, 20, 20, 0.55)
+        ),
+        url("../images/Projects/StationarySiege/SS bg no icon.png");
+
+    background-size: cover;
+    background-position: center top;
+
+    border-bottom: 1px solid var(--siege-wood);
+
+    min-height: 0;
+    padding-bottom: 90px;
+}
+
+
+/* Hero text */
+
+.stationary-siege-page .project-hero h1
+{
+    color: var(--siege-chalk);
+    padding-bottom: 60px;
+}
+
+.stationary-siege-page .project-tagline
+{
+    color: var(--siege-chalk);
+}
+
+
+/* Back link */
+
+.stationary-siege-page .back-link
+{
+    color: var(--siege-wood-light);
+}
+
+.stationary-siege-page .back-link:hover
+{
+    color: var(--siege-chalk);
+}
+
+/* Section headings */
+
+.stationary-siege-page .project-section h2
+{
+    color: var(--siege-chalk);
+}
+
+
+/* Section separators */
+
+.stationary-siege-page .project-section
+{
+    border-bottom-color: rgba(198, 169, 142, 0.35);
+}
+
+
+/* Role cards */
+
+.stationary-siege-page .role-card
+{
+    background-color: var(--siege-surface);
+
+    border: 1px solid rgba(198, 169, 142, 0.45);
+    border-top: 3px solid var(--siege-wood);
+}
+
+.stationary-siege-page .role-card h3
+{
+    color: var(--siege-chalk);
+}
+
+
+/* Controls */
+
+.stationary-siege-page .controls-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+.stationary-siege-page .control-item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 20px;
+
+    background-color: var(--siege-surface);
+
+    border-left: 3px solid var(--siege-wood);
+}
+
+.stationary-siege-page .control-item strong
+{
+    color: var(--siege-wood-light);
+    font-size: 18px;
+}
+
+@media (max-width: 700px)
+{
+    .stationary-siege-page .controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stationary-siege-hero-content
+{
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+/* Project details */
+
+.stationary-siege-page .project-details > div
+{
+    background-color: var(--siege-surface);
+
+    border-color: rgba(198, 169, 142, 0.45);
+}
+
+.stationary-siege-page .project-details strong
+{
+    color: var(--siege-wood-light);
+}
+
+
+/* Project button */
+
+.stationary-siege-page .project-button
+{
+    background-color: var(--siege-wood);
+    border: 1px solid var(--siege-wood-light);
+
+    color: white;
+}
+
+.stationary-siege-page .project-button:hover
+{
+    background-color: var(--siege-wood-light);
+}
