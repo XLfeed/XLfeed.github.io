@@ -1187,6 +1187,342 @@ footer p
 }
 
 /* =========================
+   Tower of Mana Theme
+   ========================= */
+
+.tower-of-mana-page
+{
+    --tom-parchment: #2b211a;
+    --tom-brown: #8b5e3c;
+    --tom-brown-light: #b98a62;
+    --tom-text: #2b211a;
+    --tom-surface: rgba(255, 245, 225, 0.16);
+
+    background:
+        linear-gradient(
+            rgba(255, 245, 225, 0.05),
+            rgba(255, 245, 225, 0.05)
+        ),
+        url("../images/Projects/TowerofMana/Pause_Menu.jpg");
+
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: var(--tom-text);
+}
+
+
+/* =========================
+   Tower of Mana Main
+   ========================= */
+
+.tower-of-mana-page main
+{
+    width: min(100% - 80px, 1120px);
+    max-width: 1120px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Tower of Mana Hero
+   ========================= */
+
+.tower-of-mana-hero
+{
+    position: relative;
+
+    padding: 40px 40px 70px;
+
+    background: none;
+}
+
+.tower-of-mana-hero-content
+{
+    text-align: center;
+
+    padding-top: 30px;
+}
+
+.tower-of-mana-hero h1
+{
+    color: var(--tom-parchment);
+
+    font-size: 42px;
+
+    margin: 0 0 35px 0;
+}
+
+.tower-of-mana-hero .project-tagline
+{
+    color: var(--tom-parchment);
+
+    margin: 0;
+}
+
+
+/* =========================
+   Tower of Mana Back Link
+   ========================= */
+
+.tower-of-mana-page .back-link
+{
+    color: var(--tom-brown);
+}
+
+.tower-of-mana-page .back-link:hover
+{
+    color: var(--tom-parchment);
+}
+
+
+/* =========================
+   Tower of Mana Sections
+   ========================= */
+
+.tower-of-mana-page .project-section
+{
+    border-top: 1px solid rgba(139, 94, 60, 0.28);
+}
+
+.tower-of-mana-page .project-section h2
+{
+    color: var(--tom-parchment);
+}
+
+.tower-of-mana-page .project-section p
+{
+    color: var(--tom-text);
+}
+
+
+/* =========================
+   Tower of Mana Role Cards
+   ========================= */
+
+.tower-of-mana-page .role-card
+{
+    background-color: var(--tom-surface);
+
+    border: 1px solid rgba(139, 94, 60, 0.32);
+    border-top: 3px solid var(--tom-brown);
+
+    color: var(--tom-text);
+}
+
+.tower-of-mana-page .role-card h3
+{
+    color: var(--tom-parchment);
+}
+
+.tower-of-mana-page .role-card p
+{
+    color: var(--tom-text);
+}
+
+
+/* =========================
+   Tower of Mana Video
+   ========================= */
+
+.tower-of-mana-page .video-container
+{
+    max-width: 900px;
+
+    margin: 30px auto 0;
+
+    border: 2px solid rgba(139, 94, 60, 0.55);
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    background-color: #151515;
+}
+
+
+/* =========================
+   Tower of Mana Room Diagram
+   ========================= */
+
+.tower-of-mana-page .system-diagram
+{
+    margin-top: 35px;
+
+    padding: 30px;
+
+    background-color: rgba(20, 15, 12, 0.92);
+
+    border: 1px solid rgba(139, 94, 60, 0.45);
+    border-radius: 6px;
+}
+
+.tower-of-mana-page .system-diagram img
+{
+    display: block;
+
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Tower of Mana Controls
+   ========================= */
+
+.tower-of-mana-page .controls-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+.tower-of-mana-page .control-item
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 20px;
+
+    background-color: var(--tom-surface);
+
+    border-left: 3px solid var(--tom-brown);
+}
+
+.tower-of-mana-page .control-item strong
+{
+    color: var(--tom-parchment);
+
+    font-size: 18px;
+}
+
+.tower-of-mana-page .control-item span
+{
+    color: var(--tom-text);
+}
+
+
+/* =========================
+   Tower of Mana Project Details
+   ========================= */
+
+.tower-of-mana-page .project-details > div
+{
+    background-color: var(--tom-surface);
+
+    border-color: rgba(139, 94, 60, 0.32);
+
+    color: var(--tom-text);
+}
+
+.tower-of-mana-page .project-details strong
+{
+    color: var(--tom-parchment);
+}
+
+.tower-of-mana-page .project-details span
+{
+    color: var(--tom-text);
+
+    opacity: 0.85;
+}
+
+
+/* =========================
+   Tower of Mana Project Button
+   ========================= */
+
+.tower-of-mana-page .project-button
+{
+    background-color: var(--tom-brown);
+
+    border: 1px solid var(--tom-brown-light);
+
+    color: white;
+}
+
+.tower-of-mana-page .project-button:hover
+{
+    background-color: var(--tom-brown-light);
+
+    color: #211814;
+}
+
+
+/* =========================
+   Tower of Mana Contact
+   ========================= */
+
+.tower-of-mana-page .contact-section
+{
+    border-top-color: rgba(139, 94, 60, 0.28);
+
+    color: var(--tom-text);
+}
+
+.tower-of-mana-page .contact-section h2
+{
+    color: var(--tom-parchment);
+}
+
+
+/* =========================
+   Tower of Mana Footer
+   ========================= */
+
+.tower-of-mana-page footer
+{
+    border-top-color: rgba(139, 94, 60, 0.28);
+
+    color: var(--tom-text);
+}
+
+
+/* =========================
+   Tower of Mana Mobile
+   ========================= */
+
+@media (max-width: 700px)
+{
+    .tower-of-mana-page
+    {
+        background-attachment: scroll;
+    }
+
+    .tower-of-mana-page main
+    {
+        width: 100%;
+    }
+
+    .tower-of-mana-hero
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tower-of-mana-page .controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .tower-of-mana-page .system-diagram
+    {
+        padding: 15px;
+    }
+}
+
+/* =========================
    Rocket Slime Theme
    ========================= */
 
@@ -1687,4 +2023,40 @@ footer p
     height: 100%;
 
     border: 0;
+}
+
+/* =========================
+   VIDEO EMBED
+========================= */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 2rem auto 0;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* =========================
+   SYSTEM DIAGRAM
+========================= */
+
+.system-diagram {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.system-diagram img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    display: block;
 }
