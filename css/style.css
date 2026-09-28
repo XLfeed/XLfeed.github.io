@@ -1205,10 +1205,10 @@ footer p
         ),
         url("../images/Projects/TowerofMana/Pause_Menu.jpg");
 
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center top;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 
     color: var(--tom-text);
 }
@@ -1220,8 +1220,7 @@ footer p
 
 .tower-of-mana-page main
 {
-    width: min(100% - 80px, 1120px);
-    max-width: 1120px;
+    width: 62%;
 
     margin: 0 auto;
 }
@@ -1497,18 +1496,29 @@ footer p
 {
     .tower-of-mana-page
     {
+        background-size: auto 100%;
+        background-position: center top;
         background-attachment: scroll;
+        background-repeat: repeat-y;
     }
 
     .tower-of-mana-page main
     {
-        width: 100%;
+        width: calc(100% - 40px);
+
+        margin: 0 auto;
     }
 
     .tower-of-mana-hero
     {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tower-of-mana-page .project-section
+    {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .tower-of-mana-page .controls-grid
@@ -1737,33 +1747,38 @@ footer p
 .stationary-siege-page
 {
     --siege-bg: #252525;
-    --siege-surface: #303030;
-    --siege-surface-light: #383838;
+    --siege-surface: rgba(35, 35, 35, 0.72);
+    --siege-surface-light: rgba(50, 50, 50, 0.78);
 
     --siege-chalk: #f3f0df;
     --siege-wood: #9d7357;
     --siege-wood-light: #c6a98e;
 
-    background-color: var(--siege-bg);
-    color: var(--siege-chalk);
-}
-
-
-/* Hero */
-
-.stationary-siege-page .stationary-siege-hero
-{
-    position: relative;
-
     background:
         linear-gradient(
-            rgba(20, 20, 20, 0.35),
-            rgba(20, 20, 20, 0.55)
+            rgba(20, 20, 20, 0.18),
+            rgba(20, 20, 20, 0.18)
         ),
         url("../images/Projects/StationarySiege/SS bg no icon.png");
 
     background-size: cover;
     background-position: center top;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+
+    color: var(--siege-chalk);
+}
+
+
+/* =========================
+   Stationary Siege Hero
+   ========================= */
+
+.stationary-siege-page .stationary-siege-hero
+{
+    position: relative;
+
+    background: none;
 
     border-bottom: 1px solid var(--siege-wood);
 
@@ -1997,16 +2012,16 @@ footer p
     background-color: #a85b80;
 }
 
-
 /* =========================
-   Gameplay Video
+   Video Embed
    ========================= */
 
-.video-container {
+.video-container
+{
     position: relative;
 
     width: 100%;
-    max-width: 900px;
+    max-width: 960px;
 
     margin: 30px auto 0;
 
@@ -2017,29 +2032,13 @@ footer p
     border-radius: 4px;
 }
 
+.video-container iframe
+{
+    display: block;
 
-.video-container iframe {
     width: 100%;
     height: 100%;
 
-    border: 0;
-}
-
-/* =========================
-   VIDEO EMBED
-========================= */
-
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 2rem auto 0;
-    aspect-ratio: 16 / 9;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 100%;
     border: none;
 }
 
@@ -2059,4 +2058,334 @@ footer p
     max-width: 750px;
     height: auto;
     display: block;
+}
+
+/* =========================
+   Majestic Mess Theme
+   ========================= */
+
+.majestic-mess-page
+{
+    --mm-bg: #171a20;
+    --mm-surface: #232832;
+    --mm-surface-light: #2c323e;
+
+    --mm-gold: #c69b55;
+    --mm-gold-light: #e0bd7a;
+
+    --mm-text: #f2eee6;
+    --mm-text-muted: #c8c5bf;
+
+    background-color: var(--mm-bg);
+
+    color: var(--mm-text);
+}
+
+
+/* =========================
+   Majestic Mess Hero
+   ========================= */
+
+.majestic-mess-hero
+{
+    position: relative;
+
+    width: 100vw;
+    max-width: none;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    aspect-ratio: 616 / 353;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.38)
+        ),
+        url("../images/Projects/MM/Main 616x353.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+
+.majestic-mess-hero-content
+{
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.majestic-mess-hero h1
+{
+    color: var(--mm-gold-light);
+}
+
+
+.majestic-mess-hero .project-tagline
+{
+    color: var(--mm-text);
+}
+
+
+/*
+   The hero already uses menu.png as its background,
+   so hide the duplicate hero image.
+*/
+
+.majestic-mess-hero .project-hero-image
+{
+    display: none;
+}
+
+
+/* =========================
+   Majestic Mess Back Link
+   ========================= */
+
+.majestic-mess-page .back-link
+{
+    color: var(--mm-gold-light);
+}
+
+
+.majestic-mess-page .back-link:hover
+{
+    color: white;
+}
+
+
+/* =========================
+   Majestic Mess Sections
+   ========================= */
+
+.majestic-mess-page .project-section
+{
+    border-top-color: rgba(198, 155, 85, 0.25);
+}
+
+
+.majestic-mess-page .project-section h2
+{
+    color: var(--mm-gold-light);
+}
+
+
+.majestic-mess-page .project-section h3
+{
+    color: var(--mm-gold);
+}
+
+
+.majestic-mess-page .project-section p
+{
+    color: var(--mm-text);
+}
+
+
+/* =========================
+   Majestic Mess Role Cards
+   ========================= */
+
+.majestic-mess-page .role-card
+{
+    background-color: var(--mm-surface);
+
+    border: 1px solid rgba(198, 155, 85, 0.25);
+    border-top: 3px solid var(--mm-gold);
+}
+
+
+.majestic-mess-page .role-card h3
+{
+    color: var(--mm-gold-light);
+}
+
+
+.majestic-mess-page .role-card p
+{
+    color: var(--mm-text-muted);
+}
+
+/* =========================
+   Majestic Mess Gameplay Images
+   ========================= */
+
+.majestic-mess-page .gameplay-image
+{
+    display: block;
+
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+
+    margin: 30px auto 0;
+
+    object-fit: contain;
+
+    border-radius: 4px;
+}
+
+/* =========================
+   Majestic Mess Video
+   ========================= */
+
+.majestic-mess-page .video-container
+{
+    border: 2px solid rgba(198, 155, 85, 0.55);
+
+    border-radius: 6px;
+
+    background-color: #101216;
+}
+
+
+/* =========================
+   Majestic Mess Controls
+   ========================= */
+
+.majestic-mess-page .controls-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+
+.majestic-mess-page .control-item
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 20px;
+
+    background-color: var(--mm-surface);
+
+    border-left: 3px solid var(--mm-gold);
+}
+
+
+.majestic-mess-page .control-item strong
+{
+    color: var(--mm-gold-light);
+
+    font-size: 18px;
+}
+
+
+.majestic-mess-page .control-item span
+{
+    color: var(--mm-text-muted);
+}
+
+
+/* =========================
+   Majestic Mess Project Details
+   ========================= */
+
+.majestic-mess-page .project-details > div
+{
+    background-color: var(--mm-surface);
+
+    border-color: rgba(198, 155, 85, 0.25);
+}
+
+
+.majestic-mess-page .project-details strong
+{
+    color: var(--mm-gold-light);
+}
+
+
+.majestic-mess-page .project-details span
+{
+    color: var(--mm-text-muted);
+}
+
+
+/* =========================
+   Majestic Mess Project Button
+   ========================= */
+
+.majestic-mess-page .project-button
+{
+    background-color: var(--mm-gold);
+
+    border: 1px solid var(--mm-gold-light);
+
+    color: #171a20;
+}
+
+
+.majestic-mess-page .project-button:hover
+{
+    background-color: var(--mm-gold-light);
+
+    color: #171a20;
+}
+
+
+/* =========================
+   Majestic Mess Contact
+   ========================= */
+
+.majestic-mess-page .contact-section
+{
+    border-top-color: rgba(198, 155, 85, 0.25);
+}
+
+
+.majestic-mess-page .contact-section h2
+{
+    color: var(--mm-gold-light);
+}
+
+
+/* =========================
+   Majestic Mess Footer
+   ========================= */
+
+.majestic-mess-page footer
+{
+    border-top-color: rgba(198, 155, 85, 0.25);
+
+    color: var(--mm-text-muted);
+}
+
+
+/* =========================
+   Majestic Mess Mobile
+   ========================= */
+
+@media (max-width: 700px)
+{
+    .majestic-mess-hero
+    {
+        min-height: 380px;
+
+        background-position: center;
+    }
+
+    .majestic-mess-page .controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
 }
