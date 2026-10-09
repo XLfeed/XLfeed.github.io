@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========================= -->
+    <!-- Page Metadata             -->
+    <!-- ========================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undercooked | Goh Kai Zer</title>
+
+    <!-- ========================= -->
+    <!-- Stylesheet                -->
+    <!-- ========================= -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ========================= -->
+    <!-- Undercooked Page Styling  -->
+    <!-- ========================= -->
+
+    <style>
+        .undercooked-page
+        {
+            background-color: #211b18;
+            color: #f5eee5;
+        }
+
+        .undercooked-hero
+        {
+            position: relative;
+        
+            width: 100vw;
+            max-width: none;
+        
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        
+            box-sizing: border-box;
+        
+            min-height: 580px;
+        
+            background:
+                linear-gradient(
+                    rgba(22, 14, 10, 0.35),
+                    rgba(22, 14, 10, 0.70)
+                ),
+                url("images/Projects/undercooked/Screenshot_60.png");
+        
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .undercooked-hero-content
+        {
+            max-width: 1120px;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .undercooked-hero h1
+        {
+            margin: 45px 0 20px;
+
+            font-size: clamp(42px, 7vw, 76px);
+
+            color: #f2bb64;
+
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        }
+
+        .undercooked-hero .project-tagline
+        {
+            max-width: 750px;
+
+            margin: 0 auto;
+
+            font-size: 20px;
+            line-height: 1.6;
+
+            color: #fff4e6;
+        }
+
+        .undercooked-page .back-link
+        {
+            color: #f2bb64;
+        }
+
+        .undercooked-page .back-link:hover
+        {
+            color: white;
+        }
+
+        .undercooked-page .project-section
+        {
+            border-top-color: rgba(242, 187, 100, 0.25);
+        }
+
+        .undercooked-page .project-section h2
+        {
+            color: #f2bb64;
+        }
+
+        .undercooked-page .role-card
+        {
+            background-color: #302720;
+
+            border: 1px solid rgba(242, 187, 100, 0.25);
+            border-top: 3px solid #cf793e;
+        }
+
+        .undercooked-page .role-card h3
+        {
+            color: #f2bb64;
+        }
+
+        .undercooked-page .role-card p
+        {
+            color: #e4d8ca;
+        }
+
+        .undercooked-page .video-container
+        {
+            border: 2px solid rgba(242, 187, 100, 0.5);
+
+            background-color: #120f0d;
+        }
+
+        .undercooked-page .gameplay-image
+        {
+            display: block;
+
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+
+            margin: 30px auto 0;
+
+            object-fit: contain;
+
+            border-radius: 6px;
+        }
+
+        .undercooked-page .gameplay-caption
+        {
+            max-width: 900px;
+
+            margin: 12px auto 35px;
+
+            text-align: center;
+
+            color: #d4c2ae;
+
+            font-size: 15px;
+        }
+
+        .undercooked-page .project-details > div
+        {
+            background-color: #302720;
+
+            border-color: rgba(242, 187, 100, 0.25);
+        }
+
+        .undercooked-page .project-details strong
+        {
+            color: #f2bb64;
+        }
+
+        .undercooked-page .project-button
+        {
+            background-color: #a95b2c;
+
+            border: 1px solid #f2bb64;
+
+            color: white;
+        }
+
+        .undercooked-page .project-button:hover
+        {
+            background-color: #cf793e;
+        }
+
+        .undercooked-page footer
+        {
+            border-top-color: rgba(242, 187, 100, 0.25);
+        }
+
+        @media (max-width: 700px)
+        {
+            .undercooked-hero
+            {
+                min-height: 350px;
+            }
+
+            .undercooked-hero .project-tagline
+            {
+                font-size: 17px;
+            }
+
+            .undercooked-page .role-grid
+            {
+                grid-template-columns: 1fr;
+            }
+
+            .undercooked-page .project-hero,
+            .undercooked-page .project-section
+            {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="undercooked-page">
+
+    <!-- ========================= -->
+    <!-- Header / Navigation       -->
+    <!-- ========================= -->
+
+    <header>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="works.html">My Works</a>
+            <a href="skills.html">My Skills</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========================= -->
+        <!-- Hero Section              -->
+        <!-- ========================= -->
+
+        <section class="project-hero undercooked-hero">
+
+            <div class="undercooked-hero-content">
+
+                <a href="works.html" class="back-link">
+                    &larr; Back to My Works
+                </a>
+
+                <h1>Undercooked</h1>
+
+                <p class="project-tagline">
+                    A kitchen-themed tower defence game where
+                    players shape enemy routes through strategic
+                    turret placement.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- About the Game            -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>About the Game</h2>
+
+            <p>
+                Undercooked is a kitchen-themed tower defence
+                game where players defend their base against
+                waves of incoming enemies by strategically
+                placing defensive turrets.
+            </p>
+
+            <p>
+                Players can influence enemy movement by using
+                turrets as obstacles, creating their own
+                defensive pathways while ensuring enemies
+                can still reach the base.
+            </p>
+
+            <p>
+                The game also features unique towers with
+                different abilities, a tower merging and
+                upgrade system, and collectible currency
+                scattered throughout the kitchen.
+            </p>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- My Role                   -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>My Role</h2>
+
+            <p>
+                I served as the team leader of a seven-person
+                development team consisting of four programmers
+                and three artists over a six-month development
+                period.
+            </p>
+
+            <p>
+                Alongside team leadership, I contributed to
+                gameplay programming and game design, with
+                particular emphasis on dynamic enemy pathfinding
+                and strategic turret placement.
+            </p>
+
+            <div class="role-grid">
+
+                <!-- ========================= -->
+                <!-- Team Leadership           -->
+                <!-- ========================= -->
+
+                <div class="role-card">
+
+                    <h3>Team Leadership</h3>
+
+                    <p>
+                        Led a team of seven members throughout
+                        the development of Undercooked,
+                        coordinating between programmers
+                        and artists.
+                    </p>
+
+                </div>
+
+                <!-- ========================= -->
+                <!-- Dynamic Pathfinding       -->
+                <!-- ========================= -->
+
+                <div class="role-card">
+
+                    <h3>Dynamic Enemy Pathfinding</h3>
+
+                    <p>
+                        Conceived and implemented the game's
+                        dynamic pathfinding mechanic, allowing
+                        enemy navigation routes to respond
+                        in real time to turret placement.
+                    </p>
+                    
+                    <p>
+                        Designed the system around the concept
+                        of turrets functioning as both defensive
+                        structures and physical obstacles,
+                        introducing an additional layer of
+                        strategy through player-controlled
+                        enemy routing.
+                    </p>
+
+                </div>
+
+                <!-- ========================= -->
+                <!-- Turret Placement          -->
+                <!-- ========================= -->
+
+                <div class="role-card">
+
+                    <h3>Turret Placement Validation</h3>
+
+                    <p>
+                        Implemented placement validation to
+                        ensure that at least one valid route
+                        remains between the enemy spawn
+                        and the player's base.
+                    </p>
+
+                    <p>
+                        Players receive immediate feedback
+                        through a holographic turret preview.
+                        When a placement would completely
+                        obstruct enemy navigation, the
+                        hologram turns red and the placement
+                        is rejected.
+                    </p>
+
+                </div>
+
+                <!-- ========================= -->
+                <!-- Turret Upgrade Design     -->
+                <!-- ========================= -->
+
+                <div class="role-card">
+
+                    <h3>Turret Upgrade System Concept</h3>
+
+                    <p>
+                        Proposed the original upgradeable
+                        turret mechanic to provide players
+                        with additional strategic options
+                        beyond initial turret placement.
+                    </p>
+
+                    <p>
+                        My teammates subsequently expanded
+                        this concept into a three-branch
+                        upgrade system during development,
+                        demonstrating how an initial design
+                        idea evolved through team collaboration.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Gameplay                  -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>Gameplay</h2>
+
+            <p>
+                Undercooked combines traditional tower defence
+                mechanics with player-controlled path creation.
+                Players place turrets to attack incoming enemies
+                while simultaneously influencing the routes
+                those enemies take.
+            </p>
+
+            <p>
+                Different towers provide different abilities,
+                encouraging players to experiment with their
+                defensive layouts.
+            </p>
+
+            <p>
+                Towers can also be merged and upgraded to
+                increase their effectiveness, giving players
+                additional options for strengthening their
+                defences.
+            </p>
+
+            <p>
+                Collectible currency found around the kitchen
+                provides additional gold to support the
+                player's defensive strategy.
+            </p>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Gameplay Trailer          -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>Gameplay Trailer</h2>
+
+            <p>
+                Watch the official Undercooked gameplay trailer
+                showcasing the game's tower defence mechanics,
+                turret merging, and strategic path creation.
+            </p>
+
+            <div class="video-container">
+
+                <iframe
+                    src="https://player.vimeo.com/video/1152542364"
+                    title="Undercooked Gameplay Trailer"
+                    loading="lazy"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Gameplay Screenshots      -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>Gameplay Screenshots</h2>
+
+            <!--
+                Confirm these filenames match the
+                images stored in images/Projects/UC/.
+            -->
+
+            <img
+                class="gameplay-image"
+                src="images/Projects/undercooked/Screenshot_60.png"
+                alt="Undercooked main menu featuring a kitchen environment"
+                loading="lazy"
+            >
+
+            <p class="gameplay-caption">
+                Undercooked's main menu.
+            </p>
+
+            <img
+                class="gameplay-image"
+                src="images/Projects/undercooked/Screenshot_61.png"
+                alt="Undercooked kitchen environment"
+                loading="lazy"
+            >
+
+            <p class="gameplay-caption">
+                A view of the kitchen environment.
+            </p>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Project Details           -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>Project Details</h2>
+
+            <div class="project-details">
+
+                <div>
+                    <strong>Role</strong>
+                    <span>Team Leader / Programmer / Game Design</span>
+                </div>
+
+                <div>
+                    <strong>Team Size</strong>
+                    <span>7 Members</span>
+                </div>
+
+                <div>
+                    <strong>Development Duration</strong>
+                    <span>6 Months</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Project Link              -->
+        <!-- ========================= -->
+
+        <section class="project-section">
+
+            <h2>Play Undercooked</h2>
+                
+            <p>
+                Download Undercooked from itch.io,
+                or watch the gameplay trailer on Vimeo.
+            </p>
+        
+            <a
+                class="project-button"
+                href="https://xlfeed.itch.io/undercooked"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Download on itch.io
+            </a>
+        
+            <a
+                class="project-button"
+                href="https://vimeo.com/1152542364"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Watch on Vimeo
+            </a>
+        
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Footer                    -->
+    <!-- ========================= -->
+
+    <footer>
+        <p>&copy; 2026 Goh Kai Zer. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
