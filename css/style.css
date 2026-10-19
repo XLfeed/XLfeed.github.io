@@ -546,27 +546,26 @@ footer p
 {
     display: block;
 
-    width: auto;
-    max-width: 100%;
-
+    width: 100%;
     height: auto;
-    max-height: 260px;
+
+    aspect-ratio: 16 / 9;
 
     object-fit: contain;
+    object-position: center;
 
-    border: none;
+    box-sizing: border-box;
+
+    padding: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    background-color: rgba(255, 255, 255, 0.04);
 
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
-}
-
-.project-card img.dungeon-image
-{
-    width: 220px;
-    height: 260px;
-
-    object-fit: contain;
 }
 
 .project-card:hover img
@@ -2878,4 +2877,1386 @@ footer p
 .fearless-page
 {
     overflow-x: clip;
+}
+
+
+/* =========================
+   Cube ON Theme
+   ========================= */
+
+.cube-on-page
+{
+    --cube-bg: #ffffff;
+    --cube-surface: #f7f9fc;
+
+    --cube-blue: #85baff;
+    --cube-blue-dark: #3675c2;
+
+    --cube-red: #ff3030;
+    --cube-yellow: #f2d500;
+    --cube-magenta: #ed31c5;
+
+    --cube-text: #292929;
+    --cube-muted: #646b76;
+
+    background-color: var(--cube-bg);
+
+    color: var(--cube-text);
+
+    overflow-x: clip;
+}
+
+
+/* =========================
+   Cube ON Hero
+   ========================= */
+
+.cube-on-hero
+{
+    padding: 45px 40px 70px;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.cube-on-hero-content
+{
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.cube-on-hero h1
+{
+    margin: 15px 0 35px;
+
+    color: var(--cube-blue);
+
+    font-size: clamp(46px, 7vw, 76px);
+    font-weight: 400;
+}
+
+.cube-on-hero-image
+{
+    display: block;
+
+    width: 100%;
+    max-width: 560px;
+    max-height: 470px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+.cube-on-hero .project-tagline
+{
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    font-size: 21px;
+    line-height: 1.7;
+
+    color: var(--cube-text);
+}
+
+.cube-on-hero-caption
+{
+    margin-top: 18px;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    color: var(--cube-blue-dark);
+}
+
+
+/* =========================
+   Cube ON Back Link
+   ========================= */
+
+.cube-on-page .back-link
+{
+    color: var(--cube-blue-dark);
+}
+
+.cube-on-page .back-link:hover
+{
+    color: #174779;
+}
+
+
+/* =========================
+   Cube ON Sections
+   ========================= */
+
+.cube-on-page .project-section
+{
+    border-top-color: rgba(54, 117, 194, 0.18);
+}
+
+.cube-on-page .project-section h2
+{
+    color: var(--cube-blue-dark);
+
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.cube-on-page .project-section p
+{
+    color: var(--cube-text);
+}
+
+.cube-on-about
+{
+    background-color: var(--cube-surface);
+}
+
+
+/* =========================
+   Cube ON Role Cards
+   ========================= */
+
+.cube-on-page .role-grid
+{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cube-on-page .role-card
+{
+    background-color: var(--cube-surface);
+
+    border: 1px solid rgba(54, 117, 194, 0.2);
+    border-top: 4px solid var(--cube-blue);
+
+    border-radius: 6px;
+}
+
+.cube-on-page .role-card:nth-child(2)
+{
+    border-top-color: var(--cube-magenta);
+}
+
+.cube-on-page .role-card:nth-child(3)
+{
+    border-top-color: var(--cube-yellow);
+}
+
+.cube-on-page .role-card h3
+{
+    color: var(--cube-blue-dark);
+}
+
+.cube-on-page .role-card p
+{
+    color: var(--cube-muted);
+}
+
+
+/* =========================
+   Cube ON Gameplay Mechanics
+   ========================= */
+
+.cube-on-mechanics-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.cube-on-mechanic
+{
+    padding: 30px;
+
+    background-color: var(--cube-surface);
+
+    border: 1px solid rgba(54, 117, 194, 0.18);
+    border-radius: 6px;
+}
+
+.cube-on-mechanic-number
+{
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 34px;
+    font-weight: bold;
+
+    color: var(--cube-blue-dark);
+}
+
+.cube-on-mechanic:nth-child(2) .cube-on-mechanic-number
+{
+    color: #c42a9b;
+}
+
+.cube-on-mechanic:nth-child(3) .cube-on-mechanic-number
+{
+    color: #b28b00;
+}
+
+.cube-on-mechanic:nth-child(4) .cube-on-mechanic-number
+{
+    color: #278754;
+}
+
+.cube-on-mechanic h3
+{
+    margin: 0 0 15px;
+
+    font-size: 22px;
+
+    color: var(--cube-text);
+}
+
+.cube-on-page .cube-on-mechanic p
+{
+    margin: 0;
+
+    color: var(--cube-muted);
+}
+
+
+/* =========================
+   Cube ON Gameplay Video
+   ========================= */
+
+.cube-on-page .video-container
+{
+    border: 2px solid rgba(54, 117, 194, 0.35);
+    border-radius: 6px;
+
+    background-color: #171717;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   Cube ON Controls
+   ========================= */
+
+.cube-on-controls-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.cube-on-control-item
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 25px;
+
+    background-color: var(--cube-surface);
+
+    border-left: 4px solid var(--cube-blue-dark);
+}
+
+.cube-on-control-item strong
+{
+    color: var(--cube-blue-dark);
+
+    font-size: 20px;
+}
+
+.cube-on-control-item span
+{
+    color: var(--cube-muted);
+}
+
+
+/* =========================
+   Cube ON Project Details
+   ========================= */
+
+.cube-on-page .project-details > div
+{
+    background-color: var(--cube-surface);
+
+    border-color: rgba(54, 117, 194, 0.2);
+}
+
+.cube-on-page .project-details strong
+{
+    color: var(--cube-blue-dark);
+}
+
+.cube-on-page .project-details span
+{
+    color: var(--cube-muted);
+}
+
+
+/* =========================
+   Cube ON Project Buttons
+   ========================= */
+
+.cube-on-button-group
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.cube-on-page .project-button
+{
+    background-color: var(--cube-blue-dark);
+
+    border: 1px solid var(--cube-blue-dark);
+
+    color: white;
+}
+
+.cube-on-page .project-button:hover
+{
+    background-color: var(--cube-blue);
+
+    border-color: var(--cube-blue);
+
+    color: #172c46;
+}
+
+
+/* =========================
+   Cube ON Footer
+   ========================= */
+
+.cube-on-page footer
+{
+    border-top-color: rgba(54, 117, 194, 0.2);
+
+    color: var(--cube-muted);
+}
+
+
+/* =========================
+   Cube ON Mobile
+   ========================= */
+
+@media (max-width: 900px)
+{
+    .cube-on-page .role-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .cube-on-hero
+    {
+        padding: 30px 20px 50px;
+    }
+
+    .cube-on-hero-image
+    {
+        width: 100%;
+        max-height: none;
+    }
+
+    .cube-on-hero .project-tagline
+    {
+        font-size: 17px;
+    }
+
+    .cube-on-hero-caption
+    {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .cube-on-page .project-section
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cube-on-page .project-section h2
+    {
+        font-size: 29px;
+    }
+
+    .cube-on-mechanics-grid,
+    .cube-on-controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .cube-on-mechanic
+    {
+        padding: 22px;
+    }
+
+    .cube-on-button-group
+    {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cube-on-button-group .project-button
+    {
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   InfiniRun Theme
+   ========================= */
+
+.infinirun-page
+{
+    --infinirun-bg: #0a101b;
+    --infinirun-surface: #141e2c;
+    --infinirun-surface-light: #1b2a3c;
+
+    --infinirun-blue: #6acaff;
+    --infinirun-blue-light: #a9e4ff;
+    --infinirun-orange: #f4aa55;
+
+    --infinirun-text: #f0f5fa;
+    --infinirun-muted: #b5c8d8;
+
+    background-color: var(--infinirun-bg);
+
+    color: var(--infinirun-text);
+
+    overflow-x: clip;
+}
+
+
+/* =========================
+   InfiniRun Hero
+   ========================= */
+
+.infinirun-hero
+{
+    position: relative;
+
+    box-sizing: border-box;
+
+    width: 100vw;
+    max-width: none;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    padding: 45px 40px 75px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 75%,
+            rgba(37, 105, 155, 0.45),
+            transparent 60%
+        ),
+        linear-gradient(
+            180deg,
+            #101c2d,
+            #070c15
+        );
+}
+
+.infinirun-hero-content
+{
+    position: relative;
+
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.infinirun-page .back-link
+{
+    color: var(--infinirun-blue-light);
+}
+
+.infinirun-page .back-link:hover
+{
+    color: white;
+}
+
+.infinirun-hero-title
+{
+    margin: 50px auto 0;
+}
+
+.infinirun-eyebrow
+{
+    margin: 0 0 18px;
+
+    color: var(--infinirun-orange);
+
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.infinirun-hero h1
+{
+    margin: 0 0 25px;
+
+    color: white;
+
+    font-size: clamp(50px, 8vw, 100px);
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 35px rgba(106, 202, 255, 0.35);
+}
+
+.infinirun-hero .project-tagline
+{
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--infinirun-muted);
+
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   InfiniRun Hero Track
+   ========================= */
+
+.infinirun-hero-track
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 850px;
+
+    height: 220px;
+
+    margin: 45px auto 0;
+
+    overflow: hidden;
+
+    clip-path: polygon(
+        42% 0,
+        58% 0,
+        100% 100%,
+        0 100%
+    );
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 32%,
+            rgba(106, 202, 255, 0.75) 33%,
+            transparent 34%,
+            transparent 66%,
+            rgba(106, 202, 255, 0.75) 67%,
+            transparent 68%
+        ),
+        linear-gradient(
+            180deg,
+            #26394c,
+            #0b1727
+        );
+
+    border-bottom: 3px solid var(--infinirun-blue);
+}
+
+.infinirun-hero-track::after
+{
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        repeating-linear-gradient(
+            180deg,
+            transparent 0,
+            transparent 30px,
+            rgba(106, 202, 255, 0.15) 32px,
+            transparent 34px
+        );
+}
+
+.infinirun-hero-caption
+{
+    margin: 30px 0 0;
+
+    color: var(--infinirun-blue-light);
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   InfiniRun Sections
+   ========================= */
+
+.infinirun-page .project-section
+{
+    border-top-color: rgba(106, 202, 255, 0.22);
+}
+
+.infinirun-page .project-section h2
+{
+    color: var(--infinirun-blue-light);
+
+    font-size: 34px;
+}
+
+.infinirun-page .project-section p
+{
+    color: var(--infinirun-text);
+}
+
+
+/* =========================
+   InfiniRun Role Cards
+   ========================= */
+
+.infinirun-page .role-grid
+{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.infinirun-page .role-card
+{
+    background-color: var(--infinirun-surface);
+
+    border: 1px solid rgba(106, 202, 255, 0.25);
+    border-top: 3px solid var(--infinirun-blue);
+
+    border-radius: 6px;
+}
+
+.infinirun-page .role-card h3
+{
+    color: var(--infinirun-blue-light);
+}
+
+.infinirun-page .role-card p
+{
+    color: var(--infinirun-muted);
+}
+
+
+/* =========================
+   InfiniRun Gameplay Mechanics
+   ========================= */
+
+.infinirun-mechanics-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+    margin-top: 35px;
+}
+
+.infinirun-mechanic
+{
+    padding: 30px;
+
+    background-color: var(--infinirun-surface);
+
+    border: 1px solid rgba(106, 202, 255, 0.25);
+    border-radius: 6px;
+}
+
+.infinirun-mechanic-number
+{
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: var(--infinirun-orange);
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.infinirun-mechanic h3
+{
+    margin: 0 0 15px;
+
+    color: var(--infinirun-blue-light);
+
+    font-size: 22px;
+}
+
+.infinirun-page .infinirun-mechanic p
+{
+    margin: 0;
+
+    color: var(--infinirun-muted);
+}
+
+
+/* =========================
+   InfiniRun Controls
+   ========================= */
+
+.infinirun-controls-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.infinirun-control-item
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 25px;
+
+    background-color: var(--infinirun-surface);
+
+    border-left: 4px solid var(--infinirun-blue);
+}
+
+.infinirun-control-item strong
+{
+    color: var(--infinirun-blue-light);
+
+    font-size: 20px;
+}
+
+.infinirun-control-item span
+{
+    color: var(--infinirun-muted);
+}
+
+
+/* =========================
+   InfiniRun Project Details
+   ========================= */
+
+.infinirun-page .project-details > div
+{
+    background-color: var(--infinirun-surface);
+
+    border-color: rgba(106, 202, 255, 0.25);
+}
+
+.infinirun-page .project-details strong
+{
+    color: var(--infinirun-blue-light);
+}
+
+.infinirun-page .project-details span
+{
+    color: var(--infinirun-muted);
+}
+
+
+/* =========================
+   InfiniRun Project Button
+   ========================= */
+
+.infinirun-page .project-button
+{
+    background-color: #23547b;
+
+    border: 1px solid var(--infinirun-blue);
+
+    color: white;
+}
+
+.infinirun-page .project-button:hover
+{
+    background-color: var(--infinirun-blue);
+
+    color: var(--infinirun-bg);
+}
+
+
+/* =========================
+   InfiniRun Footer
+   ========================= */
+
+.infinirun-page footer
+{
+    border-top-color: rgba(106, 202, 255, 0.22);
+
+    color: var(--infinirun-muted);
+}
+
+
+/* =========================
+   InfiniRun Mobile
+   ========================= */
+
+@media (max-width: 900px)
+{
+    .infinirun-page .role-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .infinirun-hero
+    {
+        padding: 30px 20px 50px;
+    }
+
+    .infinirun-hero-title
+    {
+        margin-top: 25px;
+    }
+
+    .infinirun-eyebrow
+    {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .infinirun-hero .project-tagline
+    {
+        font-size: 17px;
+    }
+
+    .infinirun-hero-track
+    {
+        height: 140px;
+    }
+
+    .infinirun-hero-caption
+    {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .infinirun-page .project-section
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .infinirun-page .project-section h2
+    {
+        font-size: 29px;
+    }
+
+    .infinirun-mechanics-grid,
+    .infinirun-controls-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .infinirun-mechanic
+    {
+        padding: 22px;
+    }
+}
+
+
+/* =========================
+   HeARth to WOW Theme
+   ========================= */
+
+.hearth-page
+{
+    --hearth-bg: #292929;
+    --hearth-hero-bg: #302e41;
+    --hearth-surface: #33313d;
+    --hearth-surface-dark: #22212e;
+
+    --hearth-blue: #90bfff;
+    --hearth-blue-light: #c0daff;
+    --hearth-purple: #9381bd;
+
+    --hearth-text: #f2f2fa;
+    --hearth-muted: #c7c5d7;
+
+    background-color: var(--hearth-bg);
+
+    color: var(--hearth-text);
+
+    overflow-x: clip;
+}
+
+
+/* =========================
+   HeARth to WOW Hero
+   ========================= */
+
+.hearth-hero
+{
+    position: relative;
+
+    box-sizing: border-box;
+
+    width: 100vw;
+    max-width: none;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    padding: 45px 40px 90px;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 95%,
+            rgba(105, 83, 148, 0.30),
+            transparent 65%
+        ),
+        var(--hearth-hero-bg);
+
+    text-align: center;
+}
+
+.hearth-hero-content
+{
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+.hearth-page .back-link
+{
+    color: var(--hearth-blue-light);
+}
+
+.hearth-page .back-link:hover
+{
+    color: white;
+}
+
+.hearth-hero-eyebrow
+{
+    margin: 35px 0 15px;
+
+    color: var(--hearth-muted);
+
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.hearth-hero h1
+{
+    margin: 0 0 35px;
+
+    color: var(--hearth-text);
+
+    font-size: clamp(42px, 7vw, 82px);
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+.hearth-ar-text
+{
+    color: var(--hearth-blue);
+
+    text-shadow: 0 0 25px rgba(144, 191, 255, 0.30);
+}
+
+.hearth-hero .project-tagline
+{
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--hearth-text);
+
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+.hearth-hero-caption
+{
+    margin: 35px 0 0;
+
+    color: var(--hearth-blue);
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   HeARth to WOW Sections
+   ========================= */
+
+.hearth-page .project-section
+{
+    border-top-color: rgba(144, 191, 255, 0.20);
+}
+
+.hearth-page .project-section h2
+{
+    color: var(--hearth-blue);
+
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.hearth-page .project-section p
+{
+    color: var(--hearth-text);
+}
+
+
+/* =========================
+   HeARth to WOW Screenshots
+   ========================= */
+
+.hearth-screenshots-section
+{
+    text-align: center;
+}
+
+.hearth-screenshots-section > p
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Screenshot grid */
+
+.hearth-screenshots-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    width: 100%;
+    max-width: 720px;
+
+    gap: 40px;
+
+    margin: 45px auto 0;
+
+    justify-items: center;
+    align-items: start;
+}
+
+/* Individual screenshot */
+
+.hearth-screenshot-item
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+/* Screenshot images */
+
+.hearth-screenshot-item img
+{
+    display: block;
+
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+    aspect-ratio: 996 / 2048;
+
+    object-fit: contain;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    border: 2px solid rgba(144, 191, 255, 0.35);
+    border-radius: 8px;
+}
+
+/* Screenshot captions */
+
+.hearth-screenshot-item figcaption
+{
+    width: 100%;
+
+    margin-top: 18px;
+
+    color: var(--hearth-muted);
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+
+/* =========================
+   HeARth to WOW Role Cards
+   ========================= */
+
+.hearth-role-grid
+{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hearth-page .role-card
+{
+    background-color: var(--hearth-surface);
+
+    border: 1px solid rgba(144, 191, 255, 0.20);
+    border-top: 3px solid var(--hearth-blue);
+
+    border-radius: 6px;
+}
+
+.hearth-page .role-card h3
+{
+    color: var(--hearth-blue-light);
+}
+
+.hearth-page .role-card p
+{
+    color: var(--hearth-muted);
+}
+
+
+/* =========================
+   HeARth to WOW How It Works
+   ========================= */
+
+.hearth-steps-grid
+{
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.hearth-step
+{
+    padding: 30px;
+
+    background-color: var(--hearth-surface);
+
+    border: 1px solid rgba(144, 191, 255, 0.20);
+    border-radius: 6px;
+}
+
+.hearth-step-number
+{
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--hearth-blue);
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.hearth-step h3
+{
+    margin: 0 0 15px;
+
+    color: var(--hearth-blue-light);
+
+    font-size: 22px;
+}
+
+.hearth-page .hearth-step p
+{
+    margin: 0 0 15px;
+
+    color: var(--hearth-muted);
+}
+
+.hearth-page .hearth-step p:last-child
+{
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   HeARth to WOW Project Details
+   ========================= */
+
+.hearth-page .project-details > div
+{
+    background-color: var(--hearth-surface);
+
+    border-color: rgba(144, 191, 255, 0.25);
+}
+
+.hearth-page .project-details strong
+{
+    color: var(--hearth-blue-light);
+}
+
+.hearth-page .project-details span
+{
+    color: var(--hearth-muted);
+}
+
+
+/* =========================
+   HeARth to WOW Download
+   ========================= */
+
+.hearth-page .project-button
+{
+    background-color: #486994;
+
+    border: 1px solid var(--hearth-blue);
+
+    color: white;
+}
+
+.hearth-page .project-button:hover
+{
+    background-color: var(--hearth-blue);
+
+    color: #171c2a;
+}
+
+
+/* =========================
+   HeARth to WOW Disclaimer
+   ========================= */
+
+.hearth-disclaimer
+{
+    background-color: var(--hearth-surface-dark);
+}
+
+.hearth-page .hearth-disclaimer h2
+{
+    font-size: 27px;
+}
+
+.hearth-page .hearth-disclaimer p
+{
+    color: var(--hearth-muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   HeARth to WOW Footer
+   ========================= */
+
+.hearth-page footer
+{
+    border-top-color: rgba(144, 191, 255, 0.20);
+
+    color: var(--hearth-muted);
+}
+
+
+/* =========================
+   HeARth to WOW Mobile
+   ========================= */
+
+@media (max-width: 700px)
+{
+    .hearth-hero
+    {
+        padding: 30px 20px 65px;
+    }
+
+    .hearth-hero-eyebrow
+    {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hearth-hero .project-tagline
+    {
+        font-size: 17px;
+    }
+
+    .hearth-hero-caption
+    {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .hearth-page .project-section
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hearth-page .project-section h2
+    {
+        font-size: 29px;
+    }
+
+    .hearth-role-grid,
+    .hearth-steps-grid
+    {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hearth-screenshots-grid
+    {
+        grid-template-columns: minmax(0, 1fr);
+    
+        max-width: 300px;
+    
+        gap: 40px;
+    }
+
+
+    .hearth-step
+    {
+        padding: 22px;
+    }
+
+    .hearth-page .project-details
+    {
+        grid-template-columns: 1fr;
+    }
 }
