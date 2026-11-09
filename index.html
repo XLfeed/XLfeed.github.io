@@ -1,146 +1,479 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- =========================
+         Portfolio V3 - Metadata
+         ========================= -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>Goh Kai Zer | Game Designer</title>
 
-    <title>Goh Kai Zer | Portfolio</title>
+    <meta name="description"
+          content="Game design portfolio of Goh Kai Zer, featuring gameplay systems, interactive experiences and technical design.">
+
+    <!-- =========================
+         Portfolio V3 - Stylesheets
+         ========================= -->
+
+    <link rel="stylesheet" href="css/v3-preview.css">
+    <link rel="stylesheet" href="css/v3-shared.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="works.html">My Works</a>
-            <a href="skills.html">My Skills</a>
+    <!-- =========================
+         Header / Navigation
+         ========================= -->
+
+    <header class="site-header">
+
+        <a class="site-brand" href="index.html">
+            <span class="brand-name">GOH KAI ZER</span>
+            <span class="brand-role">GAME DESIGNER</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+        
+            <a href="index.html">
+                Home
+            </a>
+        
+            <a href="works.html">
+                Projects
+            </a>
+        
+            <a href="design-studies.html">
+                Design Studies
+            </a>
+        
+            <a href="meet-designer.html">
+                Meet the Designer
+            </a>
+        
         </nav>
+
     </header>
 
+
     <main>
+        
+        <!-- =========================
+             Cinematic Title Screen
+             ========================= -->
 
-        <section class="intro-section">
+        <section
+            class="title-screen"
+            id="featured"
+            aria-label="Featured games">
 
-            <h2>HELLO</h2>
+            <!-- =========================
+                 Hero Artwork
+                 ========================= -->
 
-            <div class="intro-profile">
+            <div class="hero-artwork">
+                <img
+                    id="hero-image"
+                    src="images/Projects/MM/Startscreen 1920x1080.png"
+                    alt="Majestic Mess game artwork">
+            </div>
+        
+            <div class="hero-overlay"></div>
+        
+        
+            <!-- =========================
+                 Hero Content
+                 ========================= -->
+        
+            <div class="hero-content">
             
-                <div class="intro-image">
-                    <img src="images/me.jpg" alt="Profile image">
-                </div>
+                <p class="hero-eyebrow" id="hero-category">
+                    STEALTH GAME / FEATURED PROJECT 01
+                </p>
             
-                <div class="intro-text">
-                    <h3>I'm Kai Zer.</h3>
+                <h1 id="hero-title">Majestic Mess</h1>
+            
+                <p class="hero-description" id="hero-description">
+                    A stealth-focused game featuring enemy detection,
+                    alertness and disguise mechanics.
+                </p>
+            
+                <p class="hero-role" id="hero-role">
+                    Team Lead · Game Development · Technical Implementation
+                </p>
+            
+                <div class="hero-actions">
                 
-                    <p class="intro-name">
-                        Game designer and developer studying at SIT-DigiPen.
-                    </p>
+                    <a
+                        id="hero-project-link"
+                        class="primary-button"
+                        href="MM.html">
+                        Explore Project
+                    </a>
+                
+                    <a
+                        class="secondary-button"
+                        href="works.html">
+                        All Projects
+                    </a>
+                
                 </div>
             
             </div>
         
-            <div class="intro-description">
+        
+            <!-- =========================
+                 Cinematic Project Selection
+                 ========================= -->
+        
+            <div class="hero-selection">
             
-                <p class="intro-about">
-                    A little more about myself
+                <p class="hero-selection-heading">
+                    SELECT A PROJECT
                 </p>
             
-                <p>
-                    I am passionate about game design and development, with experience
-                    working on both individual and team-based game projects. Outside of
-                    game development, I enjoy gaming, exercising, running, going to the
-                    gym, cooking and reading.
-                </p>
+                <div
+                    class="project-selector"
+                    role="group"
+                    aria-label="Choose a featured project">
+            
+                    <!-- =========================
+                         Majestic Mess
+                         ========================= -->
+            
+                    <button
+                        class="project-option is-selected"
+                        type="button"
+                        data-project="majesticMess"
+                        aria-pressed="true">
+            
+                        <span class="project-number">01</span>
+            
+                        <span class="project-option-text">
+                            <strong>Majestic Mess</strong>
+                            <small>Stealth Game</small>
+                        </span>
+                    
+                        <span
+                            class="project-arrow"
+                            aria-hidden="true">
+                            &#8599;
+                        </span>
+                    
+                    </button>
+                
+                
+                    <!-- =========================
+                         Stationary Siege
+                         ========================= -->
+                
+                    <button
+                        class="project-option"
+                        type="button"
+                        data-project="stationarySiege"
+                        aria-pressed="false">
+                
+                        <span class="project-number">02</span>
+                
+                        <span class="project-option-text">
+                            <strong>Stationary Siege</strong>
+                            <small>Tower Defence</small>
+                        </span>
+                    
+                        <span
+                            class="project-arrow"
+                            aria-hidden="true">
+                            &#8599;
+                        </span>
+                    
+                    </button>
+                
+                
+                    <!-- =========================
+                         Rocket Slime
+                         ========================= -->
+                
+                    <button
+                        class="project-option"
+                        type="button"
+                        data-project="rocketSlime"
+                        aria-pressed="false">
+                
+                        <span class="project-number">03</span>
+                
+                        <span class="project-option-text">
+                            <strong>Rocket Slime</strong>
+                            <small>Physics Platformer</small>
+                        </span>
+                    
+                        <span
+                            class="project-arrow"
+                            aria-hidden="true">
+                            &#8599;
+                        </span>
+                    
+                    </button>
+                
+                </div>
             
             </div>
         
         </section>
-    
-        <section class="education-section">
-            <h2>Education</h2>
+
+        <!-- =========================
+             Portfolio Exploration
+             ========================= -->
+
+        <section class="v3-overview" id="explore">
         
-            <div class="education-entry">
-                <p class="education-date">2018 - 2021</p>
+            <div class="v3-container">
             
-                <h3>Singapore Polytechnic</h3>
-            
-                <p>
-                    This is the official start of my game design and game
-                    development journey. Here I spent 3 years learning how
-                    to design a game, cater a good user experience and
-                    design a good user interface, alongside familiarising
-                    myself with the Unity Game Engine.
+                <p class="v3-eyebrow">
+                    Beyond the Title Screen
                 </p>
-            </div>
-        
-            <div class="education-entry">
-                <p class="education-date">2023 - Present</p>
             
-                <h3>SIT - DigiPen</h3>
+                <h2 class="v3-heading">
+                    Explore the Archive
+                </h2>
             
-                <p>
-                    After completing my National Service, I continued my studies
-                    in game development at SIT-DigiPen, pursuing a Bachelor of
-                    Science in Computer Science in Interactive Media and Game Development.
-                    Through the programme, I have worked on team-based game projects
-                    while developing my skills in game design, programming and
-                    software development.
+                <p class="v3-copy">
+                    Every project represents a different challenge,
+                    whether designing gameplay mechanics, creating
+                    interactive experiences, or implementing the
+                    systems behind them.
+                
+                    Explore my completed projects, technical
+                    capabilities, and the designer behind the work.
                 </p>
-            </div>
-        </section>
-    
-        <section class="contact-section">
-        
-            <h2>Contacting Me</h2>
-        
-            <form action="mailto:goh_kaizer@hotmail.com"
-                  method="post"
-                  enctype="text/plain">
-        
-                <input
-                    type="text"
-                    name="Name"
-                    placeholder="Name"
-                    required>
-        
-                <div class="contact-row">
+            
+            
+                <!-- =========================
+                     Archive Navigation
+                     ========================= -->
+            
+                <div class="v3-card-grid">
                 
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="Email"
-                        required>
+                    <!-- =========================
+                         Project Archive
+                         ========================= -->
                 
-                    <input
-                        type="tel"
-                        name="Phone"
-                        placeholder="Phone">
+                    <a class="v3-card" href="works.html">
+                    
+                        <span class="v3-card-number">
+                            01 / PROJECTS
+                        </span>
+                    
+                        <h3>Project Archive</h3>
+                    
+                        <p>
+                            Explore the full collection of games,
+                            prototypes, and interactive experiences
+                            I've worked on.
+                        </p>
+                    
+                    </a>
+                
+                
+                    <!-- =========================
+                         Design Studies
+                         ========================= -->
+                
+                    <a class="v3-card" href="design-studies.html">
+                    
+                        <span class="v3-card-number">
+                            02 / DESIGN
+                        </span>
+                    
+                        <h3>Design Studies</h3>
+                    
+                        <p>
+                            Discover the engines, programming
+                            languages, and development tools
+                            I use to build gameplay systems.
+                        </p>
+                    
+                    </a>
+                
+                
+                    <!-- =========================
+                         About the Designer
+                         ========================= -->
+                
+                        <a class="v3-card" href="meet-designer.html">
+                        
+                            <span class="v3-card-number">
+                                03 / ABOUT
+                            </span>
+                        
+                            <h3>Meet the Designer</h3>
+                    
+                        <p>
+                            Discover the story behind my passion for games,
+                            my design philosophy, and the experiences
+                            that shaped my journey as a game designer.
+                        </p>
+                    
+                    </a>
                 
                 </div>
             
-                <textarea
-                    name="Message"
-                    placeholder="Type your message here..."
-                    required></textarea>
-            
-                <button type="submit">Submit</button>
-            
-            </form>
-
-            <p class="contact-thanks">
-                Thanks for contacting me!
-            </p>
+            </div>
         
         </section>
-    
+
+        <!-- =========================
+             Temporary Portfolio Footer
+             ========================= -->
+
+        <footer class="site-footer">
+            <p>GOH KAI ZER / GAME DESIGN PORTFOLIO</p>
+            <p>DESIGN · IMPLEMENT · ITERATE</p>
+        </footer>
+
     </main>
 
-    <footer>
-        <p>Goh Kai Zer Portfolio</p>
-    </footer>
+
+    <!-- =========================
+         Featured Project Data
+         ========================= -->
+
+    <script>
+        
+        /* =========================
+           Portfolio V3 - Featured Projects
+           ========================= */
+            
+        const featuredProjects = {
+        
+            majesticMess: {
+                title: "Majestic Mess",
+                category: "STEALTH GAME / FEATURED PROJECT 01",
+                description:
+                    "A stealth-focused game featuring enemy detection, " +
+                    "alertness and disguise mechanics.",
+                role:
+                    "Team Lead · Game Development · Technical Implementation",
+                image: "images/Projects/MM/Startscreen 1920x1080.png",
+                alt: "Majestic Mess game artwork",
+                link: "MM.html"
+            },
+        
+            stationarySiege: {
+                title: "Stationary Siege",
+                category: "TOWER DEFENCE / FEATURED PROJECT 02",
+                description:
+                    "Defend a pencil-case base from sentient stationery " +
+                    "using turrets and strategic upgrades, while managing " +
+                    "the noise that could attract the teacher.",
+                role:
+                    "Team Lead · Level Design · Gameplay Systems",
+                image: "images/Projects/StationarySiege/SS bg.png",
+                alt: "Stationary Siege game artwork",
+                link: "stationary-siege.html"
+            },
+        
+            rocketSlime: {
+                title: "Rocket Slime",
+                category: "PHYSICS PLATFORMER / FEATURED PROJECT 03",
+                description:
+                    "A physics-based platformer where players launch " +
+                    "a slime through obstacles, aiming to reach " +
+                    "the goal in as few jumps as possible.",
+                role:
+                    "Team Lead · Gameplay Programming",
+                image: "images/Projects/RocketSlime/Mainmenu.png",
+                alt: "Rocket Slime game artwork",
+                link: "rocket-slime.html"
+            }
+        
+        };
+
+        /* =========================
+           Featured Project Switching
+           ========================= */
+            
+        const projectButtons =
+            document.querySelectorAll("[data-project]");
+            
+        const heroImage =
+            document.getElementById("hero-image");
+            
+        const heroTitle =
+            document.getElementById("hero-title");
+            
+        const heroCategory =
+            document.getElementById("hero-category");
+            
+        const heroDescription =
+            document.getElementById("hero-description");
+            
+        const heroRole =
+            document.getElementById("hero-role");
+            
+        const heroLink =
+            document.getElementById("hero-project-link");
+            
+            
+        /* =========================
+           Select Featured Project
+           ========================= */
+            
+        function selectProject(projectId) {
+        
+            const project = featuredProjects[projectId];
+        
+            if (!project) {
+                return;
+            }
+        
+            heroImage.src = project.image;
+            heroImage.alt = project.alt;
+        
+            heroTitle.textContent = project.title;
+            heroCategory.textContent = project.category;
+            heroDescription.textContent = project.description;
+            heroRole.textContent = project.role;
+        
+            heroLink.href = project.link;
+        
+            projectButtons.forEach((button) => {
+            
+                const isSelected =
+                    button.dataset.project === projectId;
+            
+                button.classList.toggle(
+                    "is-selected",
+                    isSelected
+                );
+            
+                button.setAttribute(
+                    "aria-pressed",
+                    String(isSelected)
+                );
+            
+            });
+        
+        }
+        
+        /* =========================
+           Project Selector Events
+           ========================= */
+
+        projectButtons.forEach((button) => {
+        
+            button.addEventListener("click", () => {
+            
+                selectProject(button.dataset.project);
+            
+            });
+        
+        });
+
+    </script>
 
 </body>
 

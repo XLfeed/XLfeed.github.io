@@ -1,253 +1,530 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- =========================
+         Portfolio V3 - Metadata
+         ========================= -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+          content="Explore the games, prototypes, and interactive experiences created by game designer Goh Kai Zer.">
 
-    <title>My Works | Goh Kai Zer</title>
+    <title>Project Archive | Goh Kai Zer</title>
+
+    <!-- =========================
+         Portfolio V3 - Stylesheets
+         ========================= -->
+
+    <link rel="stylesheet" href="css/v3-shared.css">
+    <link rel="stylesheet" href="css/v3-archive.css">
 </head>
 
-<body>
+<body class="archive-page">
 
-    <header>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="works.html">My Works</a>
-            <a href="skills.html">My Skills</a>
+    <!-- =========================
+         Shared Navigation
+         ========================= -->
+
+    <header class="site-header">
+
+        <a class="site-brand" href="index.html">
+            <span class="brand-name">GOH KAI ZER</span>
+            <span class="brand-role">GAME DESIGNER</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="works.html" aria-current="page">Projects</a>
+            <a href="design-studies.html">Design Studies</a>
+            <a href="meet-designer.html">Meet the Designer</a>
         </nav>
+
     </header>
 
-<main>
 
-    <section class="works-section">
+    <main>
 
-        <h1>My Works</h1>
+        <!-- =========================
+             Project Archive Introduction
+             ========================= -->
 
-        <h2>Completed Games</h2>
+        <section class="archive-hero">
 
-        <section class="work-category">
+            <div class="archive-container">
 
-            <h2>Physical Games</h2>
+                <p class="v3-eyebrow">
+                    The Designer's Archive / Complete Collection
+                </p>
 
-            <div class="project-grid">
+                <h1>Project Archive</h1>
 
-                <article class="project-card">
-                    <a href="ough-policy.html">
-                        <img
-                            src="images/Projects/ough/OughPolicy.png"
-                            alt="Ough! Policy">
+                <p class="archive-lead">
+                    A collection of games, prototypes, and
+                    interactive experiences developed through
+                    academic projects, teamwork, and
+                    independent exploration.
+                </p>
 
-                        <h3>Ough! Policy</h3>
-                    </a>
-                </article>
+                <div class="archive-quick-nav">
+                    <a href="#selected-work">Selected Work</a>
+                    <a href="#more-games">More Games</a>
+                    <a href="#interactive-apps">Interactive Apps</a>
+                    <a href="#physical-games">Physical Games</a>
+                </div>
 
             </div>
 
         </section>
 
 
-        <section class="work-category">
+        <!-- =========================
+             Chapter 01 - Selected Work
+             ========================= -->
 
-            <h2>Digital Games</h2>
+        <section class="archive-section" id="selected-work">
 
-            <div class="project-grid">
-            
-                <!-- Majestic Mess -->
+            <div class="archive-container">
 
-                <article class="project-card">
-                    <a href="MM.html">
-                        <img
-                            src="images/Projects/MM/Startscreen 1920x1080.png"
-                            alt="Majestic Mess">
-                    
-                        <h3>Majestic Mess</h3>
+                <div class="archive-section-heading">
+
+                    <p class="v3-eyebrow">
+                        Chapter 01 / Selected Work
+                    </p>
+
+                    <h2>Featured Creations</h2>
+
+                    <p>
+                        Three recent projects showcasing different
+                        approaches to gameplay design and development.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-grid archive-grid--featured">
+
+                    <!-- =========================
+                         Majestic Mess
+                         ========================= -->
+
+                    <a class="archive-card archive-card--featured"
+                       href="MM.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/MM/Startscreen 1920x1080.png"
+                                alt="Majestic Mess game title screen">
+                        </div>
+
+                        <div class="archive-card-content">
+
+                            <span class="archive-card-index">
+                                01 / FEATURED
+                            </span>
+
+                            <h3>Majestic Mess</h3>
+
+                            <p>Stealth gameplay and team development.</p>
+
+                            <span class="archive-card-link">
+                                Explore Project &#8599;
+                            </span>
+
+                        </div>
+
                     </a>
-                </article>
 
 
-                <!-- Stationary Siege -->
+                    <!-- =========================
+                         Stationary Siege
+                         ========================= -->
 
-                <article class="project-card">
-                    <a href="stationary-siege.html">
-                        <img
-                            src="images/Projects/StationarySiege/SS bg.png"
-                            alt="Stationary Siege">
-                    
-                        <h3>Stationary Siege</h3>
+                    <a class="archive-card archive-card--featured"
+                       href="stationary-siege.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/StationarySiege/SS bg.png"
+                                alt="Stationary Siege game artwork">
+                        </div>
+
+                        <div class="archive-card-content">
+
+                            <span class="archive-card-index">
+                                02 / FEATURED
+                            </span>
+
+                            <h3>Stationary Siege</h3>
+
+                            <p>Strategic tower defence and gameplay systems.</p>
+
+                            <span class="archive-card-link">
+                                Explore Project &#8599;
+                            </span>
+
+                        </div>
+
                     </a>
-                </article>
 
 
-                <!-- Rocket Slime -->
+                    <!-- =========================
+                         Rocket Slime
+                         ========================= -->
 
-                <article class="project-card">
-                    <a href="rocket-slime.html">
-                        <img
-                            src="images/Projects/RocketSlime/Mainmenu.png"
-                            alt="Rocket Slime">
-                    
-                        <h3>Rocket Slime</h3>
+                    <a class="archive-card archive-card--featured"
+                       href="rocket-slime.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/RocketSlime/Mainmenu.png"
+                                alt="Rocket Slime game title screen">
+                        </div>
+
+                        <div class="archive-card-content">
+
+                            <span class="archive-card-index">
+                                03 / FEATURED
+                            </span>
+
+                            <h3>Rocket Slime</h3>
+
+                            <p>Physics-based movement and platforming.</p>
+
+                            <span class="archive-card-link">
+                                Explore Project &#8599;
+                            </span>
+
+                        </div>
+
                     </a>
-                </article>
 
+                </div>
 
-                <!-- The Dungeon -->
-
-                <article class="project-card">
-                    <a href="dungeon.html">
-                        <img
-                            class="dungeon-image"
-                            src="images/Projects/dungeon/IdleRight-Sheet.png"
-                            alt="The Dungeon">
-                    
-                        <h3>The Dungeon</h3>
-                    </a>
-                </article>
-
-
-                <!-- Tower of Mana -->
-
-                <article class="project-card">
-                    <a href="TOM.html">
-                        <img
-                            src="images/Projects/TowerofMana/Mock_Poster.png"
-                            alt="Tower of Mana">
-                    
-                        <h3>Tower of Mana</h3>
-                    </a>
-                </article>
-
-
-                <!-- Undercooked -->
-
-                <article class="project-card">
-                    <a href="UC.html">
-                        <img
-                            src="images/Projects/undercooked/Screenshot_60.png"
-                            alt="Undercooked">
-                    
-                        <h3>Undercooked</h3>
-                    </a>
-                </article>
-
-
-                <!-- Fearless -->
-
-                <article class="project-card">
-                    <a href="Fearless.html">
-                        <img
-                            src="images/Projects/Fearless/Titlescreen1024x500.png"
-                            alt="Fearless">
-                    
-                        <h3>Fearless</h3>
-                    </a>
-                </article>
-
-
-                <!-- Cube On -->
-
-                <article class="project-card">
-                    <a href="CubeON.html">
-                        <img
-                            src="images/Projects/Cubeon/cubeon.jpg"
-                            alt="Cube On">
-                    
-                        <h3>Cube On</h3>
-                    </a>
-                </article>
-
-
-                <!-- InfiniRun -->
-
-                <article class="project-card">
-                    <a href="InfiniRun.html">
-                        <img
-                            src="images/Projects/InfiniRun.png"
-                            alt="InfiniRun">
-                    
-                        <h3>InfiniRun</h3>
-                    </a>
-                </article>
-
-
-                <!-- Hearth to WOW -->
-
-                <article class="project-card">
-                    <a href="hearth.html">
-                        <img
-                            src="images/Projects/hearthtowow/landing.png"
-                            alt="Hearth to WOW">
-                    
-                        <h3>Hearth to WOW</h3>
-                    </a>
-                </article>
-
-
-                <!-- My VRoom -->
-
-                <article class="project-card">
-                    <a href="vroom.html">
-                        <img
-                            src="images/Projects/cardboardvr_119986.png"
-                            alt="My VRoom">
-                    
-                        <h3>My VRoom</h3>
-                    </a>
-                </article>
-            
             </div>
-        
+
         </section>
 
-    </section>
 
-    <section class="contact-section">
-    
-        <h2>Contacting Me</h2>
-    
-        <form action="mailto:goh_kaizer@hotmail.com"
-              method="post"
-              enctype="text/plain">
-    
-            <input
-                type="text"
-                name="Name"
-                placeholder="Name"
-                required>
-    
-            <div class="contact-row">
-            
-                <input
-                    type="email"
-                    name="Email"
-                    placeholder="Email"
-                    required>
-            
-                <input
-                    type="tel"
-                    name="Phone"
-                    placeholder="Phone">
-            
+        <!-- =========================
+             Chapter 02 - More Games
+             ========================= -->
+
+        <section class="archive-section archive-section--alt"
+                 id="more-games">
+
+            <div class="archive-container">
+
+                <div class="archive-section-heading">
+
+                    <p class="v3-eyebrow">
+                        Chapter 02 / Game Development
+                    </p>
+
+                    <h2>More Games</h2>
+
+                    <p>
+                        Additional game projects exploring
+                        different mechanics, genres, and
+                        development techniques.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-grid">
+
+                    <!-- The Dungeon -->
+
+                    <a class="archive-card archive-card--dungeon"
+                       href="dungeon.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/dungeon/IdleRight-Sheet.png"
+                                alt="The Dungeon character sprite"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">GAME PROJECT</span>
+                            <h3>The Dungeon</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Tower of Mana -->
+
+                    <a class="archive-card" href="TOM.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/TowerofMana/Mock_Poster.png"
+                                alt="Tower of Mana poster"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">GAME PROJECT</span>
+                            <h3>Tower of Mana</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Undercooked -->
+
+                    <a class="archive-card" href="UC.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/undercooked/Screenshot_60.png"
+                                alt="Undercooked gameplay screenshot"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">TOWER DEFENCE</span>
+                            <h3>Undercooked</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Fearless -->
+
+                    <a class="archive-card" href="Fearless.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/Fearless/Titlescreen1024x500.png"
+                                alt="Fearless title artwork"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">PUZZLE PLATFORMER</span>
+                            <h3>Fearless</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- Cube ON -->
+
+                    <a class="archive-card" href="CubeON.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/Cubeon/cubeon.jpg"
+                                alt="Cube ON game artwork"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">PUZZLE PLATFORMER</span>
+                            <h3>Cube ON</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- InfiniRun -->
+
+                    <a class="archive-card" href="InfiniRun.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/InfiniRun.png"
+                                alt="InfiniRun game artwork"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">ENDLESS RUNNER</span>
+                            <h3>InfiniRun</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
             </div>
-        
-            <textarea
-                name="Message"
-                placeholder="Type your message here..."
-                required></textarea>
-        
-            <button type="submit">Submit</button>
-        
-        </form>
-    
-    </section>
 
-</main>
+        </section>
 
-    <footer>
-        <p>Goh Kai Zer Portfolio</p>
+
+        <!-- =========================
+             Chapter 03 - Interactive Applications
+             ========================= -->
+
+        <section class="archive-section" id="interactive-apps">
+
+            <div class="archive-container">
+
+                <div class="archive-section-heading">
+
+                    <p class="v3-eyebrow">
+                        Chapter 03 / Interactive Experiences
+                    </p>
+
+                    <h2>Beyond Traditional Games</h2>
+
+                    <p>
+                        Experiments in augmented reality,
+                        virtual reality, and interactive media.
+                    </p>
+
+                </div>
+
+
+                <div class="archive-grid archive-grid--two">
+
+                    <!-- HeARth to WOW -->
+
+                    <a class="archive-card" href="hearth.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/hearthtowow/landing.png"
+                                alt="HeARth to WOW application screen"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">AUGMENTED REALITY</span>
+                            <h3>HeARth to WOW</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+
+                    <!-- My VRoom -->
+
+                    <a class="archive-card" href="vroom.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/cardboardvr_119986.png"
+                                alt="My VRoom project thumbnail"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">VIRTUAL REALITY</span>
+                            <h3>My VRoom</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Chapter 04 - Physical Games
+             ========================= -->
+
+        <section class="archive-section archive-section--alt"
+                 id="physical-games">
+
+            <div class="archive-container">
+
+                <div class="archive-section-heading">
+
+                    <p class="v3-eyebrow">
+                        Chapter 04 / Physical Game Design
+                    </p>
+
+                    <h2>Beyond the Screen</h2>
+
+                    <p>
+                        Exploring gameplay and player interaction
+                        through physical game design.
+                    </p>
+
+                </div>
+
+                <div class="archive-grid archive-grid--physical">
+
+                    <a class="archive-card" href="ough-policy.html">
+
+                        <div class="archive-media">
+                            <img
+                                src="images/Projects/ough/OughPolicy.png"
+                                alt="Ough! Policy game artwork"
+                                loading="lazy">
+                        </div>
+
+                        <div class="archive-card-content">
+                            <span class="archive-card-index">PHYSICAL GAME</span>
+                            <h3>Ough! Policy</h3>
+                            <span class="archive-card-link">View Project &#8599;</span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Closing / Contact
+             ========================= -->
+
+        <section class="archive-closing">
+
+            <div class="archive-container">
+
+                <p class="v3-eyebrow">Continue Exploring</p>
+
+                <h2>Behind the Design</h2>
+
+                <p>
+                    Interested in the thinking behind my games?
+                    Explore my level design studies, learn more
+                    about my journey, or get in touch.
+                </p>
+
+                <div class="archive-actions">
+                    <a href="design-studies.html">Design Studies</a>
+                    <a href="meet-designer.html">Meet the Designer</a>
+                    <a href="mailto:goh_kaizer@hotmail.com">Contact Me</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         Shared Footer
+         ========================= -->
+
+    <footer class="site-footer">
+        <p>GOH KAI ZER / GAME DESIGN PORTFOLIO</p>
+        <p>DESIGN · IMPLEMENT · ITERATE</p>
     </footer>
 
 </body>

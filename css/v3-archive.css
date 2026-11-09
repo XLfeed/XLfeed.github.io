@@ -1,0 +1,472 @@
+
+/* =========================
+   Portfolio V3 - Project Archive
+   ========================= */
+
+.archive-page,
+.archive-page * {
+    box-sizing: border-box;
+}
+
+.archive-page {
+    margin: 0;
+    background: var(--v3-background);
+    color: var(--v3-white);
+
+    font-family: var(--v3-font-body);
+    line-height: 1.7;
+}
+
+.archive-page a {
+    text-decoration: none;
+}
+
+.archive-container {
+    width: 100%;
+    max-width: var(--v3-content-width);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Archive Introduction
+   ========================= */
+
+.archive-hero {
+    padding:
+        clamp(72px, 10vw, 125px)
+        clamp(24px, 5vw, 90px);
+
+    background:
+        radial-gradient(
+            ellipse at 85% 15%,
+            rgba(221, 189, 131, 0.12),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #202D3D,
+            #111720
+        );
+
+    border-bottom: 1px solid var(--v3-border);
+}
+
+.archive-hero h1 {
+    margin: 10px 0 22px;
+
+    font-family: var(--v3-font-display);
+    font-size: clamp(55px, 8vw, 105px);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.archive-lead {
+    max-width: 760px;
+
+    margin: 0;
+
+    color: var(--v3-muted);
+    font-size: clamp(17px, 2vw, 21px);
+}
+
+.archive-quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.archive-quick-nav a {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 42px;
+    padding: 9px 16px;
+
+    color: var(--v3-gold-light);
+
+    background: rgba(15, 23, 34, 0.65);
+
+    border: 1px solid var(--v3-border);
+    border-radius: 3px;
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.archive-quick-nav a:hover {
+    border-color: var(--v3-gold);
+    background: #2d3d50;
+}
+
+
+/* =========================
+   Archive Sections
+   ========================= */
+
+.archive-section {
+    padding:
+        clamp(65px, 8vw, 105px)
+        clamp(24px, 5vw, 90px);
+
+    background: #151e2a;
+}
+
+.archive-section--alt {
+    background: #202b39;
+}
+
+.archive-section-heading {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.archive-section-heading h2 {
+    margin: 0 0 16px;
+
+    font-family: var(--v3-font-display);
+    font-size: clamp(37px, 5vw, 61px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.archive-section-heading > p:last-child {
+    margin: 0;
+
+    color: var(--v3-muted);
+    font-size: 15px;
+}
+
+
+/* =========================
+   Project Grid
+   ========================= */
+
+.archive-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.archive-grid--two {
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+}
+
+.archive-grid--physical {
+    grid-template-columns:
+        minmax(0, 385px);
+}
+
+
+/* =========================
+   Project Cards
+   ========================= */
+
+.archive-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    overflow: hidden;
+
+    background: #263241;
+
+    color: var(--v3-white);
+
+    border: 1px solid var(--v3-border);
+    border-radius: 5px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.archive-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--v3-gold);
+
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   Project Artwork
+   ========================= */
+
+.archive-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    aspect-ratio: 16 / 9;
+
+    min-width: 0;
+
+    padding: 12px;
+
+    background: #131c27;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--v3-border);
+}
+
+.archive-media img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* =========================
+   Dungeon Pixel Art
+   ========================= */
+
+.archive-card--dungeon .archive-media img {
+    width: auto;
+    max-width: 65%;
+    height: 75%;
+
+    image-rendering: pixelated;
+}
+
+
+/* =========================
+   Card Text
+   ========================= */
+
+.archive-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    gap: 10px;
+
+    padding: 24px;
+}
+
+.archive-card-index {
+    color: var(--v3-gold);
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.archive-card-content h3 {
+    margin: 0;
+
+    font-family: var(--v3-font-display);
+    font-size: clamp(24px, 2.6vw, 32px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.archive-card-content p {
+    margin: 0;
+
+    color: var(--v3-muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.archive-card-link {
+    display: inline-block;
+
+    margin-top: auto;
+    padding-top: 12px;
+
+    color: var(--v3-gold-light);
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   Selected Work Emphasis
+   ========================= */
+
+.archive-card--featured {
+    background: #303e50;
+
+    border-color: rgba(221, 189, 131, 0.45);
+}
+
+.archive-card--featured .archive-media {
+    background:
+        linear-gradient(
+            145deg,
+            #192737,
+            #263a4b
+        );
+}
+
+.archive-card--featured .archive-card-content {
+    min-height: 180px;
+}
+
+.archive-card--featured .archive-card-content h3 {
+    font-size: clamp(26px, 3vw, 35px);
+}
+
+
+/* =========================
+   Closing / Contact
+   ========================= */
+
+.archive-closing {
+    padding:
+        clamp(70px, 9vw, 105px)
+        clamp(24px, 5vw, 90px);
+
+    text-align: center;
+
+    background: var(--v3-background);
+}
+
+.archive-closing h2 {
+    margin: 0 0 20px;
+
+    font-family: var(--v3-font-display);
+    font-size: clamp(40px, 6vw, 68px);
+    font-weight: 400;
+}
+
+.archive-closing p:not(.v3-eyebrow) {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: var(--v3-muted);
+}
+
+.archive-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.archive-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+    padding: 12px 20px;
+
+    color: #17202a;
+    background: var(--v3-gold);
+
+    border: 1px solid var(--v3-gold);
+    border-radius: 3px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.archive-actions a:hover {
+    background: var(--v3-gold-light);
+    transform: translateY(-2px);
+}
+
+.archive-actions a:nth-child(2),
+.archive-actions a:nth-child(3) {
+    background: transparent;
+    color: var(--v3-white);
+}
+
+
+/* =========================
+   Tablet Layout
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .archive-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .archive-grid--physical {
+        grid-template-columns:
+            minmax(0, 385px);
+    }
+}
+
+
+/* =========================
+   Mobile Layout
+   ========================= */
+
+@media (max-width: 580px) {
+
+    .archive-grid,
+    .archive-grid--two,
+    .archive-grid--physical {
+        grid-template-columns:
+            minmax(0, 1fr);
+    }
+
+    .archive-card-content {
+        padding: 20px;
+    }
+
+    .archive-quick-nav {
+        gap: 8px;
+    }
+
+    .archive-quick-nav a {
+        font-size: 12px;
+    }
+
+    .archive-actions {
+        flex-direction: column;
+    }
+
+    .archive-actions a {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   Reduced Motion
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .archive-card,
+    .archive-quick-nav a,
+    .archive-actions a {
+        transition: none;
+    }
+
+    .archive-card:hover,
+    .archive-actions a:hover {
+        transform: none;
+    }
+}
