@@ -515,3 +515,134 @@ button:focus-visible {
     }
 
 }
+
+/* =========================
+   Portfolio V3 - Project Archive Return
+   ========================= */
+
+.v3-project-return {
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 12px max(24px, calc((100% - 1120px) / 2));
+
+    background: #1b2634;
+
+    border-bottom: 1px solid rgba(221, 189, 131, 0.25);
+}
+
+.v3-project-return-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+    padding: 7px 0;
+
+    color: #ddbd83;
+
+    font-family: var(--v3-font-body, "Segoe UI", sans-serif);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.v3-project-return-link:hover {
+    color: #f4e0b5;
+}
+
+.v3-project-return-link:focus-visible {
+    outline: 2px solid #ddbd83;
+    outline-offset: 5px;
+}
+
+@media (max-width: 580px) {
+
+    .v3-project-return {
+        padding: 11px 20px;
+    }
+
+    .v3-project-return-link {
+        font-size: 13px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .v3-project-return-link {
+        transition: none;
+    }
+
+}
+/* =========================
+   Portfolio V3 - Viewport Width Fix
+   ========================= */
+
+html {
+    scrollbar-gutter: stable;
+}
+
+/* =========================
+   Portfolio V3 - Legacy Role Grid Fix
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .role-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .role-card {
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+}
+
+/* =========================
+   Portfolio V3 - Desktop Full-Width Hero Fix
+   ========================= */
+
+/* Let these pages use the available viewport width */
+
+:is(
+    .majestic-mess-page,
+    .rocket-slime-page,
+    .undercooked-page
+) main {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+}
+
+
+/* Keep their hero artwork full-width without 100vw overflow */
+
+:is(
+    .majestic-mess-page,
+    .rocket-slime-page,
+    .undercooked-page
+) .project-hero {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Preserve the original readable content width */
+
+:is(
+    .majestic-mess-page,
+    .rocket-slime-page,
+    .undercooked-page
+) .project-section {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

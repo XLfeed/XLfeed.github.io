@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/v3-shared.css">
 
     <title>Fearless | Goh Kai Zer</title>
 </head>
@@ -14,16 +15,53 @@
 <body class="project-page fearless-page">
 
     <!-- =========================
-         Header / Navigation
+         Portfolio V3 - Shared Navigation
          ========================= -->
-
-    <header>
-        <nav>
+    
+    <header class="site-header">
+    
+        <a class="site-brand" href="index.html">
+        
+            <span class="brand-name">
+                GOH KAI ZER
+            </span>
+        
+            <span class="brand-role">
+                GAME DESIGNER
+            </span>
+        
+        </a>
+    
+        <nav class="site-nav" aria-label="Main navigation">
+        
             <a href="index.html">Home</a>
-            <a href="works.html">My Works</a>
-            <a href="skills.html">My Skills</a>
+        
+            <a href="works.html">Projects</a>
+        
+            <a href="design-studies.html">Design Studies</a>
+        
+            <a href="meet-designer.html">Meet the Designer</a>
+        
         </nav>
+    
     </header>
+    
+    <!-- =========================
+         Portfolio V3 - Back to Project Archive
+         ========================= -->
+    
+    <div class="v3-project-return">
+    
+        <a
+            class="v3-project-return-link"
+            href="works.html">
+    
+            <span aria-hidden="true">&#8592;</span>
+            <span>Back to Project Archive</span>
+    
+        </a>
+    
+    </div>
 
     <main>
 
@@ -32,10 +70,6 @@
              ========================= -->
 
         <section class="project-hero fearless-hero">
-
-            <a class="back-link" href="works.html">
-                &larr; Back to My Works
-            </a>
 
             <div class="fearless-hero-content">
 
@@ -524,63 +558,46 @@
         
         </section>
 
-
         <!-- =========================
-             Contact
+             Portfolio V3 - Contact
              ========================= -->
 
-        <section class="contact-section">
+        <section class="v3-project-contact">
 
-            <h2>Contacting Me</h2>
+            <p class="v3-project-contact-label">
+                LET'S CONNECT
+            </p>
 
-            <form
-                action="mailto:goh_kaizer@hotmail.com"
-                method="post"
-                enctype="text/plain">
+            <h2>Interested in My Work?</h2>
 
-                <input
-                    type="text"
-                    name="Name"
-                    placeholder="Name"
-                    required>
+            <p>
+                Have a question about this project
+                or want to discuss an opportunity?
+                I'd love to hear from you.
+            </p>
 
-                <div class="contact-row">
+            <a
+                class="v3-project-contact-button"
+                href="mailto:goh_kaizer@hotmail.com">
 
-                    <input
-                        type="email"
-                        name="Email"
-                        placeholder="Email"
-                        required>
+                Contact Me &#8599;
 
-                    <input
-                        type="tel"
-                        name="Phone"
-                        placeholder="Phone">
-
-                </div>
-
-                <textarea
-                    name="Message"
-                    placeholder="Type your message here..."
-                    required></textarea>
-
-                <button type="submit">
-                    Submit
-                </button>
-
-            </form>
+            </a>
 
         </section>
 
     </main>
 
-
     <!-- =========================
-         Footer
+         Portfolio V3 - Shared Footer
          ========================= -->
 
-    <footer>
-        <p>Goh Kai Zer Portfolio</p>
+    <footer class="site-footer">
+
+        <p>GOH KAI ZER / GAME DESIGN PORTFOLIO</p>
+
+        <p>CLARITY · FLOW · FUNCTION</p>
+
     </footer>
 
 </body>
